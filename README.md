@@ -57,7 +57,54 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 
 
 
+### Day 4
 
+* Implemented `map()` to render restaurant cards dynamically
+* Used `filter()` to filter restaurant data
+* Organized code using Import and Export
+* Improved component structure and reusability
+* Learned data-driven UI rendering
+
+
+## ✨ Features Implemented
+
+* Functional Components
+* JSX
+* Component Composition
+* Props
+* Dynamic Data Rendering
+* Restaurant Cards
+* API Data Integration
+* Array Mapping (`map`)
+* Data Filtering (`filter`)
+* Import & Export Modules
+* Added button click functionality
+
+## 📚 Concepts Learned
+
+* React Functional Components
+* JSX
+* Props
+* Component Reusability
+* Import & Export
+* Array Methods (`map`, `filter`)
+* Rendering Lists
+* Config-Driven UI Basics
+* Event Handling
+
+
+
+
+
+
+
+
+
+
+
+
+
+ * Building DesiBites while learning React and modern frontend development.
 
 ## 👨‍💻 Author
 
