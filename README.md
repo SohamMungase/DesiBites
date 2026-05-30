@@ -1,30 +1,69 @@
-# Day - 01 ✅
-# Day - 02 ✅
-# Day - 03 
--header
-    -logo
-    -nav item
+# DesiBites 🍔
 
-#Day - 04
+A React-based Food Ordering Web Application built while learning React from scratch.
 
-React Card Component with API Data
-Overview
+## 🚀 Project Overview
 
-This project demonstrates how to create reusable React card components and dynamically populate them using data fetched from an API.
+DesiBites is a food ordering web application inspired by modern food delivery platforms. This project is being developed step by step to learn React concepts and frontend development best practices.
 
-Features:
 
-Built using React
-Reusable Card Component
-Dynamic rendering using API data
-Clean and responsive UI
-Component-based architecture
-Technologies Used
-React.js
-JavaScript (ES6+)
-HTML5
-CSS3
-API Integration
+## 🛠️ Tech Stack
+
+* React
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+* Parcel Bundler
+
+
+## 📅 Progress
+
+### Day 1
+
+* Set up React project
+* Created first Functional Component
+* Rendered "Hello Everyone" using React
+
+### Day 2
+
+* Built the Navigation Bar
+* Added logo and navigation links
+* Learned component composition
+
+### Day 3
+
+* Created Restaurant Cards Component
+* Displayed restaurant information dynamically
+* Integrated API data from a food ordering platform
+* Rendered multiple restaurant cards using array mapping
+
+
+## 📂 Features Implemented
+
+* Functional Components
+* JSX
+* Component Composition
+* Dynamic Data Rendering
+* API Data Consumption
+* Responsive Restaurant Cards
+
+## 🎯 Learning Objectives
+
+* Understanding React Fundamentals
+* Working with Components and Props
+* Rendering Dynamic UI
+* Consuming API Data
+* Building Real-World React Applications
+
+
+
+
+
+## 👨‍💻 Author
+
+**Soham Mungase**
+
+
 
 
     

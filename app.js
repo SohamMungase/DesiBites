@@ -79,7 +79,7 @@ const reslist = [
     },
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
-   {
+  {
     "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
     info: {
       id: "21003",
@@ -156,8 +156,8 @@ const reslist = [
     },
     widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo",
   },
-  
-  
+
+
 ];
 
 const Header = () => {
@@ -183,20 +183,19 @@ const Header = () => {
 };
 
 const Restaurantcard = (props) => {
-  const {reslist} = props
-  const {name,cuisines,avgRating,sla} = reslist.info;
+  const { reslist } = props;
+  const { name, cuisines, avgRating, sla } = reslist.info;
   return (
     <div className="res-card">
       <img
         className="res-logo"
         src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2026/2/12/dd196a56-86a8-409b-8e29-df0dbbfd76fc_21001.JPG"
       />
-      
+
       <h1>{name}</h1>
       <h4>{cuisines.join(", ")}</h4>
       <h4>{avgRating} Stars</h4>
       <h4>{sla.deliveryTime}Minutes</h4>
-      
     </div>
   );
 };
@@ -206,13 +205,13 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        {/* <Restaurantcard reslist={reslist[0]} /> */}
+        <Restaurantcard reslist={reslist[0]} />
 
-        {
-          reslist.map((restaurant)=>{
-            return <Restaurantcard key = {restaurant.info.id} reslist = {restaurant}/>
-          })
-        }
+        {reslist.map((restaurant) => {
+          return (
+            <Restaurantcard key={restaurant.info.id} reslist={restaurant} />
+          );
+        })}
       </div>
     </div>
   );
