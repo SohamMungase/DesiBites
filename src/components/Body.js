@@ -3,6 +3,7 @@ import { reslist } from "../utils.js/mockdata";
 import { useState, useEffect } from "react";
 import Loader from "./Loader";
 import React from "react";
+import { Link } from "react-router";
 
 const Body = () => {
   const [listofRestaurant, setlistofRestaurant] = useState([]);
@@ -74,7 +75,8 @@ const Body = () => {
       <div className="res-container">
         {filteredRestaurants.map((restaurant) => {
           return (
-            <Restaurantcard key={restaurant.info.id} reslist={restaurant} />
+            {/* <Restaurantcard key={restaurant.info.id} reslist={restaurant} /> */},
+            <Link to={"/restaurant/" + restaurant.info.id } key={restaurant.info.id}><Restaurantcard resData={restaurant}/></Link>
           );
         })}
       </div>
