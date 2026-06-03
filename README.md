@@ -24,11 +24,15 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 * Created first Functional Component
 * Rendered "Hello Everyone" using React
 
+#-------------------------------------
+
 ### Day 2
 
 * Built the Navigation Bar
 * Added logo and navigation links
 * Learned component composition
+
+#----------------------------------
 
 ### Day 3
 
@@ -55,7 +59,7 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 * Consuming API Data
 * Building Real-World React Applications
 
-
+#-----------------------------------------
 
 ### Day 4
 
@@ -91,8 +95,31 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 * Rendering Lists
 * Config-Driven UI Basics
 * Event Handling
-#--------------------------
+#---------------------------------------
 
+## 🚀 Day 5 Progress
+
+* Users can search for restaurants by entering a restaurant name in the search bar. The restaurant   list updates dynamically and displays only the matching results.
+
+
+### ✅ Features Implemented
+
+- React Router setup for seamless navigation
+- Dynamic restaurant listing
+- Search functionality to find restaurants by name
+- Reusable Restaurant Card component
+- React Hooks (`useState`, `useEffect`)
+- API integration for fetching restaurant data
+- Component-based architecture
+- Responsive UI foundation
+
+## 🎯 What I Learned Today
+
+- React Router Basics
+- Search & Filter Logic
+- State Management with useState
+- Data Fetching with useEffect
+- Component Reusability
 
 
 
@@ -107,8 +134,8 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 
  * Building DesiBites while learning React and modern frontend development.
 
-## 👨‍💻 Author
 
+## 👨‍💻 Author
 **Soham Mungase**
 
 

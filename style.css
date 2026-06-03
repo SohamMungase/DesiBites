@@ -53,3 +53,34 @@
   margin: 10px;
   
 }
+
+.loder-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loder{
+   margin: 20px;
+  width: 200px;
+  height: 400px;
+  background-color: aqua;
+}
+
+.header{
+  background-color: aqua;
+  padding: 10px;
+  text-align: center;
+}
+
+.header a{
+  color: antiquewhite;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.header a:hover{
+  color: black;
+}
+
+
