@@ -120,7 +120,28 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 - State Management with useState
 - Data Fetching with useEffect
 - Component Reusability
+#--------------------------------------
 
+## 🚀 Day 6 Progress
+
+* Built the Restaurant Menu page and successfully fetched menu data from the API. Users can now click on a restaurant and view its menu dynamically, making the application more interactive and closer to a real-world food ordering platform.
+
+### ✅ Features Implemented
+
+- Dynamic Restaurant Listing
+- Restaurant Menu Page
+- Fetched Restaurant Menu Data from API
+- Dynamic Menu Rendering
+- Reusable React Components
+- API Data Fetching with Hooks
+
+## 🎯 What I Learned Today
+
+- Dynamic Routing using React Router**
+- Fetching Data for Individual Restaurants**
+- Working with URL Parameters**
+- Handling Nested API Data**
+- Rendering Dynamic Menu Items**
 
 
 
