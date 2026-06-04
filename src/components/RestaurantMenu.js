@@ -1,34 +1,52 @@
-import React from 'react'
-import { useEffect, useState } from "react"
-import { useParams } from "react-router"
+import React from "react";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router";
 
-const RestaurantMenu=()=> {
+const RestaurantMenu = () => {
+  const [resMenu, setResMenu] = useState(null);
 
-    const [resMenu,setResMenu]= useState(null)
+  useEffect(() => {
+    FetchData();
+  }, []);
 
-    useEffect(()=>{
-        FetchData()
-    },[])
+  const FetchData = async () => {
+    const data = await fetch(
+      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=21001",
+    );
+    const json = await data.json();
+    console.log(json);
+    setResMenu(json.data);
+  };
 
-    const FetchData = async()=>{
-        const data = await fetch("https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=21001")
-        const json = await data.json()
-        console.log(json)
-        setResMenu(json.data)
-    }
+  const { name, cuisines, costForTwoMessage } =
+    resMenu?.cards[2]?.card?.card?.info || {};
 
-      const {name} = resMenu?.cards[2]?.card?.card?.info || {};
+  const { itemCards } =
+    resMenu?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
+      ?.card || {};
 
-      if(!resMenu){
-        return <div>Loading......</div>
-      }
-
+  if (!resMenu) {
+    return <div>Loading......</div>;
+  }
 
   return (
     <div>
-        <h1>{name}</h1>
-    </div>
-  )
-}
+      <h1>{name}</h1>
+      <h2>{cuisines}</h2>
+      <h3>{costForTwoMessage}</h3>
+      <h2>MENU:</h2>
 
-export default RestaurantMenu
+      {/* <h1>{itemCards[0].card.info.name}</h1>
+      <h1>{itemCards[1].card.info.name}</h1>
+      <h1>{itemCards[2].card.info.name}</h1> */}
+
+      <ul>
+        {itemCards?.map((item) => (
+          <li key={item.card.info.id}>{item.card.info.name}</li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default RestaurantMenu;
