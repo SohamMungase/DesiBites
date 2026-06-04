@@ -144,7 +144,30 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 - Rendering Dynamic Menu Items**
 #---------------------------------------
 
+## Day 7 Progress
 
+## ✅ Features Implemented 
+
+### Functional Components
+- Created reusable Functional Components.
+- Learned how Functional Components help build clean and maintainable UI.
+
+### Class Components
+- Implemented Class Components.
+- Explored component lifecycle basics and state management using classes.
+
+### Dynamic User Data
+- Fetched and displayed user information in the About page.
+- Integrated API data fetching to render user details dynamically.
+
+### Navbar Improvements
+- Enhanced Navbar structure using React components.
+- Improved code organization and component reusability.
+
+## 📚 What I Learned Today
+- Difference between Functional Components and Class Components.
+- Advantages of Functional Components in modern React development.
+- Fetching API data and displaying it inside React components.
 
 
 

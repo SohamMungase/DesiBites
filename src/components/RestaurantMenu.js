@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 
 const RestaurantMenu = () => {
   const [resMenu, setResMenu] = useState(null);
+  const {id} = useParams()
 
   useEffect(() => {
     FetchData();
@@ -11,7 +12,7 @@ const RestaurantMenu = () => {
 
   const FetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=21001",
+      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=" + id,
     );
     const json = await data.json();
     console.log(json);
