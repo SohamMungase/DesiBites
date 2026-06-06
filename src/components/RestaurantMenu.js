@@ -4,7 +4,7 @@ import { useParams } from "react-router";
 
 const RestaurantMenu = () => {
   const [resMenu, setResMenu] = useState(null);
-  const {id} = useParams()
+  const { id } = useParams();
 
   useEffect(() => {
     FetchData();
@@ -12,7 +12,8 @@ const RestaurantMenu = () => {
 
   const FetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=" + id,
+      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=" +
+        id,
     );
     const json = await data.json();
     console.log(json);
@@ -22,7 +23,7 @@ const RestaurantMenu = () => {
   const { name, cuisines, costForTwoMessage } =
     resMenu?.cards[2]?.card?.card?.info || {};
 
-  const { itemCards } =
+  const { itemCards, imageId } =
     resMenu?.cards[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
       ?.card || {};
 
@@ -43,7 +44,17 @@ const RestaurantMenu = () => {
 
       <ul>
         {itemCards?.map((item) => (
-          <li key={item.card.info.id}>{item.card.info.name}</li>
+          <li key={item.card.info.id}>
+            {item.card.info.name}
+            <img className = "menu-img"
+              src={
+                item.card.info.imageId
+                  ? `https://media-assets.swiggy.com/swiggy/image/upload/${item.card.info.imageId}`
+                  : "null"
+              }
+              alt={name}
+            />{" "}
+          </li>
         ))}
       </ul>
     </div>

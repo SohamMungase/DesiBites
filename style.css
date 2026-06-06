@@ -51,6 +51,12 @@
 
 .button{
   margin: 10px;
+  padding: 10px;
+  background-color: aqua;
+  border: none;
+  color: white;
+  font-size: 16px;
+  
   
 }
 
@@ -70,6 +76,8 @@
   background-color: aqua;
   padding: 10px;
   text-align: center;
+
+
 }
 
 .header a{
@@ -90,5 +98,11 @@
  
 }
 
-
+.menu-img{
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
 

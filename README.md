@@ -168,6 +168,29 @@ DesiBites is a food ordering web application inspired by modern food delivery pl
 - Difference between Functional Components and Class Components.
 - Advantages of Functional Components in modern React development.
 - Fetching API data and displaying it inside React components.
+#--------------------------------------------------------------
+
+## Day 8 Progress
+
+## ✅ Features Implemented Today
+
+### Class-Based Components
+- Learned the structure of React Class Components.
+- Implemented a Class Component in the About page.
+- Explored how Class Components manage state and lifecycle methods.
+
+### API Data Fetching
+- Fetched user information from an API.
+- Displayed dynamic user data inside the About page.
+- Understood how API calls work within Class Components.
+
+## 📚 What I Learned Today
+
+- Difference between Functional Components and Class Components.
+- Understanding `constructor()`, `render()`, and component lifecycle.
+- How to fetch API data in Class Components.
+- Managing state using `this.state` and `this.setState()`.
+- Creating reusable and organized React components.
 
 
 
