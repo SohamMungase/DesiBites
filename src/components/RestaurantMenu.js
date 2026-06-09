@@ -12,7 +12,7 @@ const RestaurantMenu = () => {
 
   const FetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=" +
+      "https://corsproxy.io/?url=https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=18.5288974&lng=73.8665321&restaurantId=" +
         id,
     );
     const json = await data.json();
@@ -46,7 +46,8 @@ const RestaurantMenu = () => {
         {itemCards?.map((item) => (
           <li key={item.card.info.id}>
             {item.card.info.name}
-            <img className = "menu-img"
+            <img
+              className="menu-img"
               src={
                 item.card.info.imageId
                   ? `https://media-assets.swiggy.com/swiggy/image/upload/${item.card.info.imageId}`
