@@ -23,11 +23,11 @@ const Body = () => {
     const json = await data.json();
     setlistofRestaurant(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants,
+        ?.restaurants || [],
     );
     setFilteredRestaurants(
       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants,
+        ?.restaurants || [],
     );
   };
 
